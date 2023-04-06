@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Golfcourse from './components/Golfcourse';
 import { useState } from 'react';
 
@@ -6,7 +6,7 @@ function App() {
   const [par, setPar] = useState('72');
   const showGolfcourses = true;
   return (
-    <div className="App">
+    <div className="App bg-red-300">
       {showGolfcourses ? (
         <>
           <input
