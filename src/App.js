@@ -1,19 +1,21 @@
 import './App.css';
+import Golfcourse from './components/Golfcourse';
 
 function App() {
+  const showGolfcourses = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello there!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showGolfcourses ? (
+        <>
+          <Golfcourse />
+          <Golfcourse />
+          <Golfcourse />
+          <Golfcourse />
+          <Golfcourse />
+        </>
+      ) : (
+        <p> You cannot see golf courses </p>
+      )}
     </div>
   );
 }
